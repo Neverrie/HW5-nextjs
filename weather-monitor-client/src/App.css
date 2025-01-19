@@ -1,0 +1,259 @@
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #4a90e2;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.top-bar .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.top-bar .buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.top-bar-button {
+  background: white;
+  color: #4a90e2;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+  text-decoration: none;
+}
+
+.top-bar-button:hover {
+  background: #f0f8ff;
+}
+
+.dashboard {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  min-height: 150px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card.selected {
+  border: 2px solid #4a90e2;
+  background-color: #f0f8ff;
+}
+
+.card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card p {
+  font-size: 20px;
+  color: #555;
+  margin: 0;
+}
+
+.chart-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.data-page {
+  padding: 20px;
+}
+
+.data-page h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.data-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.data-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.data-card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.data-card p {
+  font-size: 20px;
+  color: #555;
+  margin: 0;
+}
+.data-page {
+  padding: 20px;
+}
+
+.data-page h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.data-filter {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-button {
+  background: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.filter-button:hover {
+  background: #357abd;
+}
+
+.filter-button.active {
+  background: #357abd;
+  border: 2px solid white;
+}
+
+.data-table {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.data-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.data-table th {
+  background-color: #f5f7fa;
+  font-weight: bold;
+}
+
+.data-table tr:hover {
+  background-color: #f0f8ff;
+}
+
+
+
+.search-date {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.search-date label {
+  font-size: 16px;
+  color: #333;
+}
+
+.search-date button {
+  background: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.search-date button:hover {
+  background: #357abd;
+}
+
+/* Стили для результата поиска */
+.search-result {
+  margin-top: 20px;
+  background-color: #f0f8ff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #4a90e2;
+  text-align: center;
+  max-width: 400px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-result h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.search-result p {
+  font-size: 18px;
+  color: #555;
+  margin: 5px 0;
+}
